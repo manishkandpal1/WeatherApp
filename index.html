@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WeatherApp||ManishKandpal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
@@ -22,6 +22,7 @@
             <p class="tab" data-searchWeather>Search Weather</p>
         </div>
 
+
         <div class="weather-container">
 
             <!-- grant location container-->
@@ -29,7 +30,7 @@
                 <img src="./assets/location.png" width="80" height="80" loading="lazy">
                 <p>Grant Location Access</p>
                 <p>Allow Access to get weather Information</p>
-                <button class="btn" data-grantAccess>Grant Access</button>
+                <button class="btn grant-btn" data-grantAccess>Grant Access</button>
             </div>
 
             <!-- search form -> form-container-->
@@ -46,6 +47,13 @@
                 <p>Loading</p>
             </div>
 
+             <!-- error 404 content -->
+            <div class="sub-container api-error-container">
+                <img class="err404" src="./assets/not-found.png" data-notFoundImg />
+                <p data-apiErrorText></p>
+                <button class="btn" data-apiErrorBtn>Retry</button>
+            </div>
+            
             <!-- show weather info -->
             <div class="sub-container user-info-container">
 
