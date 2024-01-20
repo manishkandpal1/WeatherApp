@@ -14,7 +14,7 @@ const apiErrorBtn = document.querySelector("[data-apiErrorBtn]");
 
 
 let oldTab = userTab;
-const API_KEY = "11ec5fd01462d001e45197518422bda8";
+const API_KEY = "2a047c106285ffdf186c3036ebfe289b";
 
 oldTab.classList.add("current-tab");
 getfromSessionStorage();
